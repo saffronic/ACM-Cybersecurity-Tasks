@@ -12,4 +12,5 @@ The client socket will then return the responses to the server ip. If the comman
 
 Features to add:
 -Keylogger
+adding keylogger as a separate file. will merge it with main soruce code after testing and debugging on virtual machine
 -hide the virus
