@@ -1,3 +1,6 @@
+#prototype keylogger prints system info 
+#to add: use ftp on client side to send the files to server
+
 import socket
 from requests import get
 
