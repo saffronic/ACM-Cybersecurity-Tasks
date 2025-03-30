@@ -10,7 +10,12 @@ The client side of the malware will open a socket connection to the servers ip, 
 It will use a loop to receive a command. subprocess library will be used to retrieve output.
 The client socket will then return the responses to the server ip. If the command is exit, the loop breaks and socket is closed.
 
-Features to add:
--Keylogger
-adding keylogger as a separate file. will merge it with main soruce code after testing and debugging on virtual machine
--hide the virus
+Project Plan:
+1. Setting up basic RAT to connect my device to target
+2. testing 
+3. Creating self-keylogger separately
+4. Converting keylogger to use ftp from client side
+5. testing
+6. integrate keylogger with original RAT files
+7. testing
+8. Making virus harder to detect
