@@ -1,0 +1,20 @@
+Flag: ACM{7h3_n4m3_15_5h3rl0ck_h0lm35_4nd_7h3_4ddr355_15_221b_b4k3r_57r337}
+
+Googling the title of this task reveals The lying detective is a BBC sherlock episode. The theme here is things 'hiding in plain sight', according to the wiki summary.
+
+Considering this title, the event we're talking about is probably cryptic hunt.
+Looking through cryptic hunt posts on instagram, I found one with a recent comment containing a video link and a reply recommending to sort the comments by new. 
+https://www.youtube.com/watch?v=RlZUH2N9S3Q
+
+Following the link and sorting the comments, you find a recent comment clearly mentioning the task.
+
+To prove that you really know OSINT maybe try 0:24 on my name
+~ACM
+
+At 0:24 on the video, Sherlock speaks:
+"The name is Sherlock Holmes, and the address is 221 B Baker Street"
+
+The account name is Anti Venom. The username (4n71v3n0m) is the same in leet, and the flag format is specified to be a leet string. 
+Running this sentence through a leet encoder the result is:
+7h3 n4m3 15 5h3rl0ck h0lm35 4nd 7h3 4ddr355 15 221b b4k3r 57r337
+spaces are replaced by underscores for the flag text.
