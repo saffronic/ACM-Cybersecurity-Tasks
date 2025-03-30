@@ -2,15 +2,15 @@ My goal will be to create a simple Remote Access Trojan (RAT) starting from a ba
 I will add more features as i continue.
 
 The basic version of the program contains, on the host side, a program to create a socket that can send commands and receive response after binding to the client.
-It creates a socket, using an unpriveliged port and the host as 0.0.0.0 to listen on all channels.
+It creates a socket, using an unpriveliged port and the host server as my laptop ip.
 Commands are given using a loop. if the command is exit, the loop breaks and both server and client sockets are closed.
 otherwise, the command is encoded and sent to the client, then their response is received and printed.
 
 The client side of the malware will open a socket connection to the servers ip, in this case my own ip address.
 It will use a loop to receive a command. subprocess library will be used to retrieve output.
-The client socket will then return the responses to the server ip. If the command is exit, the loop breaks and socket is closed.
 
-The keylogger uses the pynput library Listener function to record key presses, and accordingly they are written to the file
+client side file will also contain a keylogger that will write to a file and when exiting, send the entire file to the server
+The keylogger uses the pynput library to record key presses, and accordingly they are written to the file.
 
 Project Plan:
 1. Setting up basic RAT to connect my device to target
